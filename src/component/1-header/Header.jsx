@@ -18,7 +18,6 @@ else{
 
   },[theme])
 
- 
 
   return (
     <header className="flex mt-2 ">
@@ -36,15 +35,11 @@ else{
           <li>
             <a href="">About</a>
           </li>
-          <li>
-            <a href="">Articls</a>
-          </li>
+         
           <li>
             <a href="">Project</a>
           </li>
-          <li>
-            <a href="">speaking</a>
-          </li>
+          
           <li>
             <a href="">contact</a>
           </li>
@@ -81,15 +76,11 @@ else{
               <li>
                 <a href="">About</a>
               </li>
-              <li>
-                <a href="">Article</a>
-              </li>
+             
               <li>
                 <a href="">Porject</a>
               </li>
-              <li>
-                <a href="">Speaking</a>
-              </li>
+             
               <li>
                 <a href="">Uses</a>
               </li>
