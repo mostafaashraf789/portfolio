@@ -43,6 +43,9 @@ else{
           <li>
             <a href="">contact</a>
           </li>
+          <li>
+            <a href="">speaking</a>
+          </li>
         </ul>
       </nav>
 
