@@ -14,7 +14,7 @@ export default function Hero() {
             animate={{ scale: 1 }}
             transition={{ damping: 8, type: "spring", stiffness: 100 }}
             className="avatar"
-            src="74f25ebc-16a3-49f3-921f-954e82d53724-modified.png"
+            src="./74f25ebc-16a3-49f3-921f-954e82d53724-modified.png"
             alt=""
           />
           <div className="fa-solid fa-circle-check"></div>
@@ -29,22 +29,22 @@ export default function Hero() {
         </div>
         <div className="icons flex">
           <div>
-            <a href="">
+            <a href="https://twitter.com/home" target="_blank">
               <i className="fa-brands icon fa-twitter "></i>
             </a>
           </div>
           <div>
-            <a href="">
+            <a href="https://www.instagram.com/moustafaashraf20/?next=%2F"  target="_blank">
               <i className="fa-brands icon fa-instagram"></i>
             </a>
           </div>
           <div>
-            <a href="">
+            <a href="https://github.com/mostafaashraf789" target="_blank">
               <i className="fa-brands icon fa-github"></i>
             </a>
           </div>
           <div>
-            <a href="">
+            <a href="https://www.linkedin.com/in/mostafa-ashraf-92249326a/" target="_blank">
               <i className="fa-brands icon fa-linkedin"></i>
             </a>
           </div>
