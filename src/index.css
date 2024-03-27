@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Boogaloo", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Tilt Neon", sans-serif;
+  scroll-behavior: smooth;
+}
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&family=Roboto:wght@100;300;400;500;700&family=Tilt+Neon&display=swap");
+
+:root {
+  --primary: #000;
+  --secondary: rgb(24 24 27);
+  --border: rgba(63, 63, 70, 0.4);
+  --title: rgb(244 244 245);
+  --subtitle: rgb(161 161 170);
+  --bgheader: rgb(39 39 42);
+  --blue: rgb(93 188 252);
+}
+.light {
+  --primary: rgb(250, 250, 250);
+
+  --secondary: rgb(255 255 255);
+  --border: rgba(202, 202, 202, 0.518);
+  --title: rgb(39 39 42);
+  --subtitle: rgb(85 82 91);
+  --bgheader: rgba(218, 218, 218, 0.596);
+  --blue: rgb(255, 255, 255);
+}
+body {
+  background-color: var(--primary);
+  color: #fff;
+}
+.Container {
+  border: var(--border) solid 2px;
+  width: 80%;
+  background-color: var(--secondary);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 3rem;
+}
+.divider {
+  border-bottom: 1px solid var(--border);
+  margin: 2rem 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+button {
+  all: unset;
+}
+button:active {
+  scale: 0.9;
+}
+
+.borderr {
+  border: 2px solid red;
+}
+
+button.scroll2up {
+  position: fixed;
+  bottom: 1.9rem;
+  right: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.527);
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  text-align: center;
+  background-color: rgba(25, 118, 210, 0.85);
+}
+button.scroll2up:hover {
+  background-color: rgba(25, 118, 210);
+}
+
+.de4a {
+  opacity: 1;
+  transition: 3s all;
+}
+
+@media (max-width: 1000px) {
+  .Container {
+    padding: 0 1.9rem;
+    width: 90%;
+  }
+}
+@media (max-width: 700px) {
+  .Container {
+    padding: 0 1rem;
+    width: 95%;
+  }
+  button.scroll2up {
+    opacity: 0.5;
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+}
