@@ -1,0 +1,159 @@
+header ul {
+    gap: 1rem;
+}
+
+header {
+
+    justify-content: space-between;
+    padding: 0 3.4rem;
+}
+
+header ul li a {
+    color: var(--title);
+    font-size: 0.88rem;
+    font-weight: 500;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+}
+
+header nav {
+    background-color: var(--bgheader);
+    border-radius: 55px;
+    -webkit-border-radius: 55px;
+    -moz-border-radius: 55px;
+    -ms-border-radius: 55px;
+    -o-border-radius: 55px;
+    
+}
+
+header ul li a:hover {
+    color: var(--blue);
+    font-size: 0.99rem;
+
+}
+
+header .menu {
+    display: none;
+}
+
+
+/* modal */
+header .popUp {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(40, 40, 48, 0.91);
+    z-index: 11;
+    backdrop-filter: blur(2px);
+}
+
+header .smallModal {
+    width: 85%;
+    margin: auto;
+    background-color: var(--secondary);
+    animation: mymove 1s 1;
+    -webkit-animation: mymove 1s 1;
+}
+
+@keyframes mymove {
+    0% {
+        scale: 0;
+    }
+
+    60% {
+        scale: 1.1;
+    }
+
+    100% {
+        scale: 1;
+    }
+
+}
+
+header .smallModal ul li {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.77rem;
+    padding-top: 0.5rem;
+}
+
+header .smallModal ul li:first-child {
+    text-align: right;
+    border: none;
+    padding-bottom: 0rem;
+}
+
+header .smallModal ul li:last-child {
+    border: none;
+}
+
+/* icons */
+header .fa-bars,
+header .fa-moon
+ {
+    font-size: 3.5rem;
+    color: white;
+    background-color: var(--bgheader);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    height: 2.4rem;
+    width: 2.4rem;
+    font-size: x-large;
+    border: 1px solid rgba(244, 165, 96, 0.249);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--subtitle);
+    transition: 0.2s all;
+    -webkit-transition: 0.2s all;
+    -moz-transition: 0.2s all;
+    -ms-transition: 0.2s all;
+    -o-transition: 0.2s all;
+}
+header .fa-sun{font-size: 3.5rem;
+    color:orange;
+    background-color: var(--bgheader);
+    border-radius: 50%;
+    height: 2.4rem;
+    width: 2.4rem;
+    font-size: x-large;
+    border: 1px solid rgba(244, 165, 96, 0.249);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 40px rgba(221, 82, 2, 0.397) ;
+    transition: 0.2s all;
+ 
+}
+
+header .fa-bars:hover,
+header .fa-moon:hover,
+header .fa-sun:hover {
+
+    border: 1px solid rgba(244, 165, 96);
+    color: var(--title);
+}
+
+header .fa-x {
+    color: var(--subtitle);
+    transition-duration: 0.5s;
+}
+
+header .fa-x:hover {
+    color: rgb(129, 2, 2);
+    rotate: 180deg;
+}
+
+@media (max-width: 700px) {
+    header nav {
+        display: none
+    }
+
+    header .menu {
+        display: block;
+    }
+}

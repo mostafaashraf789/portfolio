@@ -1,0 +1,135 @@
+
+main.flex {
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+
+
+/*1. left-section ==> button   */
+
+main section.left-section {
+ 
+  flex-direction: column;
+  gap: 2rem;
+}
+
+main section.left-section button {
+  background-color: rgba(36, 37, 46, 1);
+  width: 8rem;
+  text-align: center;
+  padding: 0.75rem;
+  font-size: 1.05rem;
+  border-radius: 10px;
+  opacity: 0.7;
+  letter-spacing: 0.1rem;
+  transition: 0.3s all;
+}
+
+main section.left-section button:hover {
+  opacity: 1;
+}
+
+main section.left-section button.active {
+  opacity: 1;
+  border: 1px solid var(--blue);
+}
+
+/*1. right-section ==> cards   */
+
+
+
+main section.right-section {
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+
+article .box {
+  padding: 0.4rem 0.4rem;
+  width: 230px;
+}
+article .box .title {
+  color: var(--title);
+  
+}
+article .box .subtitle {
+  color:var(--subtitle);
+  
+}
+article .box .icons{
+  justify-content: space-between;
+ 
+  
+}
+article .box .icons a{
+  color: var(--subtitle);
+ transition: 0.3s all;
+  
+}
+article .box .icons a:hover{
+  color: var(--title);
+  font-size: 1.2rem;
+ 
+  
+}
+article .box .icons .link{
+  gap: 1rem ;
+  
+}
+article .box a.more{
+  color: var(--blue);
+  
+}
+article .box a.more:hover{
+  border-bottom: 2px solid var(--blue);
+  color: var(--blue);
+  font-size:20px;
+}
+
+article.Card{
+  border: 2px solid rgba(93,188,252,0.3);
+  transition: 0.3s all;
+  border-radius: 5px;
+  background-image: linear-gradient(rgba(63, 63, 70, 0.4),rgba(63, 63, 70, 0.4));
+  
+  
+}
+.light  .Card{
+  border: none;
+}
+article.Card:hover{
+  border: 2px solid var(--blue);
+  rotate: 2deg;
+  scale: 1.1;
+ 
+}
+article.Card img{
+  border-radius: 5px;
+  width: 230px;
+  height: 201px;
+}
+
+@media(max-width:600px){
+  main.flex {
+    gap: 1rem;
+    flex-direction: column; 
+    align-items: center;
+  }
+  main section.left-section {
+      flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content:center ;
+  }
+  main section.left-section button {
+    
+    
+    text-align: center;
+    padding: 0.35rem;
+    font-size: 0.95rem;
+  }
+
+}
